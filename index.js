@@ -19,14 +19,16 @@ const { MongoClient, ObjectId } = require('mongodb');
 
     app.use(bodyParser.json());
 
-    const port = 3000;
+    const port = process.env.PORT || 3000;
 
   /*
   Create, Read (All/Single), Update & Delete
   Criar, Ler (Tudo ou Individual), Atualizar e Remover
   */
 
-  const mensagens = Undefined;
+  //const mensagens = db.collection('mensagens');
+    const mensagens = undefined;
+
 
   app.get('/', (req, res) => {
     res.send('Hello World!');
