@@ -15,7 +15,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 
     //const db = client.db(dbName);
 
-    const app = express()
+   // const app = express()
 
     app.use(bodyParser.json());
 
