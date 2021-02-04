@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "a460545f-1c54-4571-a523-caea68ef2d57",
+		"name": "Ocean_Backend_Nuvem_04_02_2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}",
+					"host": [
+						"{{API_URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ler todas as mensagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar uma mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Essa é uma nova mensagem.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar uma mensagem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Essa é uma mensagem editada.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens/601b3a3ec5c44b2c4c70c10e",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"601b3a3ec5c44b2c4c70c10e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ler apenas uma mensagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/601b3a3ec5c44b2c4c70c10e",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"601b3a3ec5c44b2c4c70c10e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar uma mensagem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/601b3a3ec5c44b2c4c70c10e",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"601b3a3ec5c44b2c4c70c10e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
