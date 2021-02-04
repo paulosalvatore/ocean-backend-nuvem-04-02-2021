@@ -30,6 +30,7 @@ const { MongoClient, ObjectId } = require('mongodb');
     const mensagens = undefined;
   app.get('/', (req, res) => {
     res.send('aaaaaaaaaaAAAAAAAAAAAAAAAAAAAALOOOOOOOOOOOOOOOOOOOOOOOOO POOOOOVOOO BRASILEIRO!');
+    res.send('BOOOOA NOITE MEU POVO E MINHA POVA!!');
   });
 
   // Criar (Create)
