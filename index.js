@@ -9,24 +9,25 @@ const { MongoClient, ObjectId } = require('mongodb');
 
     console.info('Conectando ao banco de dados...');
 
-    const client = await MongoClient.connect(url, { useUnifiedTopology: true });
+    //const client = await MongoClient.connect(url, { useUnifiedTopology: true });
 
     console.info('MongoDB conectado com sucesso!');
 
-    const db = client.db(dbName);
+    //const db = client.db(dbName);
 
     const app = express()
 
     app.use(bodyParser.json());
 
-    const port = 3000;
+    const port = process.env.PORT || 3000;
 
   /*
   Create, Read (All/Single), Update & Delete
   Criar, Ler (Tudo ou Individual), Atualizar e Remover
   */
 
-  const mensagens = db.collection('mensagens');
+  //const mensagens = db.collection('mensagens');
+    const mensagens = undefined;
 
   app.get('/', (req, res) => {
     res.send('Hello World!');
