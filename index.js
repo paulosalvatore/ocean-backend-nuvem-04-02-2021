@@ -43,7 +43,9 @@ const { MongoClient, ObjectId } = require('mongodb');
 
   // Ler Tudo (Read All)
   app.get('/mensagens', async (req, res) => {
-    res.send(await mensagens.find().toArray());
+      const listaMensagens = (await mensagens.find().toArray()).map(msg => msg.texto);
+            
+    res.send(listaMensagens);
   });
 
   // Ler Individual (Read Single)
