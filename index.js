@@ -5,7 +5,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 (async () => {
     const url = 'mongodb+srv://admin:MVhyXlPJWaD2Cfbq@cluster0.7fu0x.mongodb.net/ocean_db?retryWrites=true&w=majority';
 
-    const dbName = 'ocean_db';
+    const dbName = ocean_db';
 
     console.info('Conectando ao banco de dados...');
 
@@ -29,7 +29,7 @@ const { MongoClient, ObjectId } = require('mongodb');
   const mensagens = db.collection('mensagens');
     const mensagens = undefined;
   app.get('/', (req, res) => {
-    res.send('aaaaaaaaaaAAAAAAAAAAAAAAAAAAAALOOOOOOOOOOOOOOOOOOOOOOOOO POOOOOVOOO BRASILEIRO!');
+    res.send('hola mundo');
   });
 
   // Criar (Create)
