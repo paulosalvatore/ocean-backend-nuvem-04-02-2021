@@ -29,7 +29,7 @@ const { MongoClient, ObjectId } = require('mongodb');
   const mensagens = db.collection('mensagens');
   
   app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Bem vindo ao site de João Vitor!');
   });
 
   // Criar (Create)
